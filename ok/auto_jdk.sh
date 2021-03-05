@@ -1,7 +1,7 @@
 #!/bin/bash
 #自动安装jdk-8u181
-source ./base.sh
-jdk_directory=$root_directory
+#source ./base.sh
+jdk_directory=/opt/software
 
 cd $jdk_directory
 echo "开始安装jdk-8u181--------"
