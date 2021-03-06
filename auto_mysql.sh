@@ -16,7 +16,7 @@ LWT
 function install() {
 
 	#解压mysql 
-	tar zxvf mysql-5.7.24.tar.gz
+	tar zxvf mysql-5.7.25.tar.gz
 	cat > /etc/yum.repos.d/mysql.repo << EOF
 [mysql5.7]
 name=mysql57
