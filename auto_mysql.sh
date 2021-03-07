@@ -54,8 +54,9 @@ function main() {
 	ver=`cat /etc/redhat-release|sed -r 's/.* ([0-9]+)\..*/\1/'`
 	if [ $ver -eq 7 ];then
 		echo -e "\033[40m检测到操作系统为:centos7\033[0m"
-		echo "开始安装依赖"
-		`yum install -y  gcc gcc-c++ pcre pcre-devel openssl openssl-devel zlib zlib-devel cmake ncurses ncurses-devel bison bison-devel perl perl-devel autoconf`
+		echo "开始安装"
+		# 以下依赖内网不支持，不影响mysql安装
+#		`yum install -y  gcc gcc-c++ pcre pcre-devel openssl openssl-devel zlib zlib-devel cmake ncurses ncurses-devel bison bison-devel perl perl-devel autoconf`
 		install_on_centos7
 	else
 		echo -e  "\033[34m此操作系统不受支持\033[0m"
